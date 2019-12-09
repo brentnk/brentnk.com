@@ -1,0 +1,98 @@
+name: Brent Nkomo
+contact:
+  telephone: 1 720 891 8171
+  email: brent.nkomo@gmail.com
+  website: brentnk.com
+  linkedin: www.linkedin.com/in/brentnk
+summary: Highly self-motivated software engineer with experience in application architecture, mentorship, and process improvement. Lead by example from within a self-managing team to grow and mentor junior developers. Increased application release cadence from 2 times/month to 2+ times/day. Successfully architected and launched modernized version of legacy application.
+experience:
+  companies:
+  - order: 1
+    name: Choozle
+    detail:
+      desc: Digital advertising platform
+      location: Denver, CO
+      timeSpan:
+        startDate: Sept 2016
+        endDate: Jan 2020
+    roles:
+    - order: 1
+      title: Engineering Team Lead
+      timeSpan:
+        startDate: Dec 2018
+        endDate: Jan 2020
+      points:
+      - order: 1
+        text: Implemented multiple proof of concept systems utilizing multiple different technologies and coding styles (functional, OO, procedural)
+      - order: 2
+        text: Presented business case to executive leadership for platform rewrite focusing on value to company and optimal use of current and future use of developer resources
+      - order: 3
+        text: Led 1-on-1 and team mentorship sessions with junior developers focusing on overall code best practices, code organization, and Go specific idioms,syntax, and patterns
+    - order: 2
+      title: Devops/SRE
+      timeSpan:
+        startDate: Sept 2016
+        endDate: Jan 2020
+      points:
+      - order: 1
+        text: Designed and implemented gitops based CICD workflow with a focus on current and past system state instrospection and "correctness"
+      - order: 2
+        text: Migrated legacy PHP/Vagrant application developer environment to containerized(Docker) setup greatly reducing environment drift and developer onboarding time.
+      - order: 3
+        text: Designed and implemented automated build and testing pipeline using Jenkins and Docker building off of newly containerized legacy application.
+      - order: 4
+        text: Planned and executed migration from single host bare-metal production setup to a cloud environment (K8s on AWS) with a focus on reducing the technical knowledge needed for developer to release code and manual effort required. This enabled code to be shipped much more often and reliably.
+      - order: 5
+        text: Identified key application bottlenecks and single points of failure during major outage. Worked with senior developers, product, and platform support to setup appropriate alerting and contingency plans.
+    - order: 3
+      title: Solutions Architect
+      timeSpan:
+        startDate: Sept 2017
+        endDate: Jan 2020
+      points:
+      - order: 1
+        text: Held application architecture learning sessions for front and backend teams with a large focus on asynchronus processing and basic resourece management.
+      - order: 2
+        text: Built proof of concept containerized "micro" services to lead discussion on breaking down the monolithic legacy application. The goal was to increase code understanding and lower the high barrier to development work when working on unfamiliar parts of the application.
+      - order: 3
+        text: Managed high-level architecture of platform covering all aspects of the application lifetime from ideation to code organization to deployment.
+      - order: 4
+        text: Conducted regular research on technologies to reevaluate design and technology choices. Wrote simple spikes to serve as discussion starters.
+
+  - order: 2
+    name: Galvanize
+    detail:
+      desc: Data science bootcamp
+      location: Denver, CO
+      timeSpan:
+        startDate: May 2016
+        endDate: Aug 2016
+    roles:
+    - order: 1
+      title: Student (data science)
+      timeSpan:
+        startDate: May 2016
+        endDate: Aug 2016
+      points:
+      - order: 1
+        text: Python focused environemnt applying machine learning tools from linear regressions to ensemble methods to neural networks.
+  - order: 3
+    name: Ouray Sportswear
+    detail:
+      desc: Apparel printing and embroidery
+      location: Denver, CO
+      timeSpan:
+        startDate: Jul 2015
+        endDate: May 2016
+    roles:
+    - order: 1
+      title: Operations Analyst
+      timeSpan:
+        startDate: Jul 2015
+        endDate: May 2016
+      points:
+      - order: 1
+        text: Analyze manufacturing process to identify gaps and opportunities.
+      - order: 2
+        text: Worked alongside CO, manufacturing floor managers, and in-house devs to implement cross departmental solutions with a focus on data centralization an visibility. 
+        
