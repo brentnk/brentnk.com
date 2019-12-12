@@ -28,7 +28,7 @@ const ContactInfo = (props: ContactInfoProps) => {
       <span>{email}</span>·
 
       {/* <label>Website</label> */}
-      <span><a href={`https://${website}`}>{website}</a></span>·
+      {/* <span><a href={`https://${website}`}>{website}</a></span>· */}
 
       {/* <label>Linkedin</label> */}
       <span><a href={`https://${linkedin}`}>{linkedin}</a></span>
