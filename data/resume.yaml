@@ -49,7 +49,7 @@ experience:
         endDate: Jan 2020
       points:
       - order: 1
-        text: Designed and implemented gitops based CICD workflow with a focus on current and past system state instrospection and "correctness"
+        text: Designed and implemented gitops based CICD workflow with a focus on current and past system state introspection and "correctness"
       - order: 2
         text: Migrated legacy PHP/Vagrant application developer environment to containerized(Docker) setup greatly reducing environment drift and developer onboarding time.
       - order: 3
@@ -65,7 +65,7 @@ experience:
         endDate: Jan 2020
       points:
       - order: 1
-        text: Held application architecture learning sessions for front and backend teams with a large focus on asynchronus processing and basic resourece management.
+        text: Held application architecture learning sessions for front and backend teams with a large focus on asynchronous processing and basic resource management.
       - order: 2
         text: Built proof of concept containerized "micro" services to lead discussion on breaking down the monolithic legacy application. The goal was to increase code understanding and lower the high barrier to development work when working on unfamiliar parts of the application.
       - order: 3
@@ -93,7 +93,7 @@ experience:
         endDate: Aug 2016
       points:
       - order: 1
-        text: Python focused environemnt applying machine learning tools from linear regressions to ensemble methods to neural networks.
+        text: Python focused environment applying machine learning tools from linear regressions to ensemble methods to neural networks.
   - order: 3
     name: Ouray Sportswear
     detail:
@@ -116,5 +116,5 @@ experience:
       - order: 1
         text: Analyze manufacturing process to identify gaps and opportunities.
       - order: 2
-        text: Worked alongside CO, manufacturing floor managers, and in-house devs to implement cross departmental solutions with a focus on data centralization an visibility. 
+        text: Worked alongside CO, manufacturing floor managers, and in-house devs to implement cross departmental solutions with a focus on data centralization and visibility. 
         
