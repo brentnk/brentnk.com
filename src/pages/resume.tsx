@@ -2,8 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 
 import resumeYAML from "../../data/resume.yaml"
-import ContactInfo from "../components/resume/contact_info"
-import CompanyContainer from "../components/resume/company"
+import ContactInfo from "../components/resume/contactInfo"
+import ResumeSection from "../components/resume/section"
+import Company from "../components/resume/company"
+import RoleContainer from "../components/resume/roles"
+import CompanyContainer from "../components/resume/companyContainer"
 
 export interface ResumeTimeSpan {
   startDate: string
@@ -27,7 +30,7 @@ export interface ResumeRolePoint {
 }
 
 export interface ResumeRoleData {
-  order: number,
+  order: number
   title: string
   timeSpan: ResumeTimeSpan
   points: ResumeRolePoint[]
@@ -47,21 +50,54 @@ export interface ResumeData {
   }
 }
 
+const resumeContainerStyle: React.CSSProperties = {
+  display: `grid`,
+  gridTemplateColumns: `repeat(12, 1fr)`,
+  gap: `.5em`,
+}
+
+const nameStyle: React.CSSProperties = {
+  fontSize: `2.25em`,
+  fontWeight: `bold`,
+  marginTop: `1em`,
+  gridColumn: `1 / 9`,
+}
+
 const ResumePage = () => {
   const resumeData: ResumeData = resumeYAML
-  const {contact, name, summary, experience} = resumeData
+  const { contact, summary, experience } = resumeData
 
   return (
-  <Layout>
-    <h1>{resumeData.name}</h1>
-    <ContactInfo {...contact}></ContactInfo>
+    <Layout>
+      <div className="resume-layout" style={resumeContainerStyle}>
+        <div style={nameStyle}>{resumeData.name}</div>
+        <ResumeSection style={{ gridColumn: `1 / 10` }}>
+          <ContactInfo {...contact}></ContactInfo>
+        </ResumeSection>
 
-    <h2>Professional Summary</h2>
-    <p>{summary}</p>
+        {/* <ResumeSection
+          title={`Languages`}
+          style={{ gridColumn: `11 / -1`, gridRow: `2 / span 2` }}
+        >
+          Go
+          Kotlin/Java
+        </ResumeSection> */}
 
-    <h2>Experience</h2>
-    <CompanyContainer companies={experience.companies}></CompanyContainer>
-  </Layout>
-)}
+        <ResumeSection
+          title={`Professional Summary`}
+          style={{ gridColumn: `1 / 10` }}
+        >
+          <p>{summary}</p>
+        </ResumeSection>
+
+        <ResumeSection title={`Experience`} style={{ gridColumn: `1 / -1` }}>
+          <CompanyContainer companies={experience.companies}></CompanyContainer>
+        </ResumeSection>
+      </div>
+    </Layout>
+  )
+}
+
+export { resumeContainerStyle }
 
 export default ResumePage

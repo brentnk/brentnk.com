@@ -1,0 +1,9 @@
+span {
+    margin-left: .1em;
+    margin-right: .1em;
+    display: inline-block;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}

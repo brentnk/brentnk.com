@@ -1,7 +1,10 @@
 import React from "react"
 import { ResumeRoleData } from "../../pages/resume"
 
-import "./roles.css"
+const roleTitleStyle: React.CSSProperties = {
+  fontWeight: `bold`,
+  fontSize: `larger`
+}
 
 const RoleDetail = (props: ResumeRoleData) => {
   const { order, points, timeSpan, title } = props
@@ -10,16 +13,13 @@ const RoleDetail = (props: ResumeRoleData) => {
   points.sort((a, b) => a.order - b.order)
   return (
     <>
-      <div className="role-title">{title}</div>
+      <div className="role-title" style={roleTitleStyle}>{title}</div>
       <div className="work-dates">
         {timeSpan.startDate} to {timeSpan.endDate}
       </div>
-      <div className="description" style={{
-          borderLeft: `solid #000000`,
-          paddingLeft: `1em`
-      }}>
+      <div className="description">
         {points.map(point => (
-          <p>{point.text}</p>
+          <p key={point.order}>{point.text}</p>
         ))}
       </div>
     </>
@@ -28,14 +28,15 @@ const RoleDetail = (props: ResumeRoleData) => {
 
 interface RoleContainerProps {
   roles: ResumeRoleData[]
+  style: React.CSSProperties
 }
 
 const RoleContainer = (props: RoleContainerProps) => {
   const { roles } = props
   return (
-    <div className="">
+    <div className="" style={props.style}>
       {roles.map(role => (
-        <RoleDetail {...role}></RoleDetail>
+        <RoleDetail key={role.order} {...role}></RoleDetail>
       ))}
     </div>
   )

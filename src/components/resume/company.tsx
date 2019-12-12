@@ -1,10 +1,5 @@
 import React from "react"
 import { ResumeCompanyData } from "../../pages/resume"
-import RoleContainer from "./roles"
-
-const companyDetailStyle: React.CSSProperties = {
-    float: `right`
-}
 
 const companyName: React.CSSProperties = {
   fontWeight: `bold`,
@@ -17,13 +12,17 @@ const workDates: React.CSSProperties = {
   fontSize: `.9em`,
 }
 
-const CompanyDetail = (props: ResumeCompanyData) => {
-  const { name, detail, roles } = props
+interface StyledComponent {
+  style: React.CSSProperties
+}
+
+const Company = (props: ResumeCompanyData & StyledComponent) => {
+  const { name, detail } = props
   const { startDate, endDate } = detail.timeSpan
 
   return (
     <>
-      <div className="company-detail" style={companyDetailStyle}>
+      <div className="company-detail" style={props.style}>
         <div style={companyName} className="company-name">
           {name}
         </div>
@@ -32,24 +31,8 @@ const CompanyDetail = (props: ResumeCompanyData) => {
           {startDate} to {endDate}
         </div>
       </div>
-      <RoleContainer roles={roles}></RoleContainer>
     </>
   )
 }
 
-interface CompanyContainerProps {
-  companies: ResumeCompanyData[]
-}
-
-const CompanyContainer = (props: CompanyContainerProps) => {
-  const { companies } = props
-  if (!companies || companies.length == 0)
-    return <div className="">There are no companies...</div>
-
-  const companyDetails = companies.map(company => (
-    <CompanyDetail {...company}></CompanyDetail>
-  ))
-  return <div className="companies">{companyDetails}</div>
-}
-
-export default CompanyContainer
+export default Company
