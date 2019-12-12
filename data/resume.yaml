@@ -30,13 +30,11 @@ experience:
         endDate: Jan 2020
       points:
       - order: 1
-        text: Implemented 3 proof of concept platform replacements utilizing different technologies and coding styles (functional, OO, procedural) to use as references during planning.
-      - order: 2
         text: Presented business case to executive leadership for platform rewrite focusing on value to company, optimal use of current and future use of developer resources, and hireability.
-      - order: 3
-        text: Led 1-on-1 and team mentorship sessions with junior developers focusing on overall code best practices, code organization, and Go specific idioms,syntax, and patterns.
-      - order: 4
+      - order: 2
         text: Contributed core platform code focusing on providing a consistent API surface for all layers of the application, maintaining consistent code semantics, and planning for future extensibility. 
+      - order: 3
+        text: Led 1-on-1 and team mentorship sessions with junior developers focusing on overall code best practices, code organization, and Go specific idioms,syntax, and patterns.  Trained 5 developers over 6 months while maintaing legacy application.
     - order: 2
       title: Devops/SRE
       technologies:
@@ -57,7 +55,7 @@ experience:
       - order: 3
         text: Designed and implemented automated build and testing pipeline using Jenkins and Docker building off of newly containerized legacy application.
       - order: 4
-        text: Planned and executed migration from single host bare-metal production setup to a cloud environment (K8s on AWS) with a focus on reducing the technical knowledge needed for developer to release code and manual effort required. This enabled code to be shipped weekly over monthly.
+        text: Planned and executed migration from single host bare-metal production setup to a cloud environment (K8s on AWS) with a focus on reducing the technical knowledge needed for releasing enabling code to be shipped weekly instead of monthly.
       - order: 5
         text: Identified key application bottlenecks and single points of failure during major outage. Worked with senior developers, product, and platform support to setup appropriate alerting and contingency plans.  Implemented changes brought the platform uptime from 75% to 99%.
     - order: 3
@@ -67,14 +65,13 @@ experience:
         endDate: Jan 2020
       points:
       - order: 1
-        text: Held application architecture learning sessions for front and backend teams with a large focus on asynchronous processing and basic resource management.
+        text: Held application architecture learning sessions for frontend and backend teams with a strong focus on asynchronous processing, concurrency, and basic resource management.
       - order: 2
-        text: Built proof of concept containerized "micro" services to lead discussion on breaking down the monolithic legacy application. The goal was to increase code understanding and lower the high barrier to development work when working on unfamiliar parts of the application.
+        text: Built 3 proof-of-concept containerized "micro" services to lead discussion on breaking down the monolithic legacy application. The goal being to increase code understanding and lower the high barrier to development work while working on unfamiliar parts of the application.
       - order: 3
         text: Managed high-level architecture of platform covering all aspects of the application lifetime from ideation to code organization to deployment.
       - order: 4
         text: Conducted regular research on technologies to reevaluate design and technology choices. Wrote simple spikes to serve as discussion starters.
-
   - order: 2
     name: Galvanize
     detail:
@@ -119,4 +116,5 @@ experience:
         text: Analyze manufacturing process to identify gaps and opportunities.
       - order: 2
         text: Worked alongside CO, manufacturing floor managers, and in-house devs to implement cross departmental solutions with a focus on data centralization and visibility. 
-        
+      - order: 3
+        text: Contributed code to in-house Dynamics platform and implemented a self-updating floor dashboard using SQL Server, PowerBI, and Python.
