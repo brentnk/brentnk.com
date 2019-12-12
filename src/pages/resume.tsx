@@ -32,6 +32,7 @@ export interface ResumeRolePoint {
 export interface ResumeRoleData {
   order: number
   title: string
+  technologies: string[]
   timeSpan: ResumeTimeSpan
   points: ResumeRolePoint[]
 }

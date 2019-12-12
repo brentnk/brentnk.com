@@ -1,19 +1,26 @@
 import React from "react"
 import { ResumeRoleData } from "../../pages/resume"
 
+import "./roles.css"
+
 const roleTitleStyle: React.CSSProperties = {
   fontWeight: `bold`,
-  fontSize: `larger`
+  fontSize: `larger`,
 }
 
 const RoleDetail = (props: ResumeRoleData) => {
-  const { order, points, timeSpan, title } = props
+  const { order, points, timeSpan, title, technologies } = props
 
   // in-place sort
   points.sort((a, b) => a.order - b.order)
   return (
     <>
-      <div className="role-title" style={roleTitleStyle}>{title}</div>
+      <div className="role-title" style={roleTitleStyle}>
+        {title}
+        {technologies ? (
+          <span className={`role-tech`}>{technologies.join(" · ")}</span>
+          ) : null}
+          </div>
       <div className="work-dates">
         {timeSpan.startDate} to {timeSpan.endDate}
       </div>

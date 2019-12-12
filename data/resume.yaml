@@ -18,6 +18,13 @@ experience:
     roles:
     - order: 1
       title: Engineering Team Lead
+      technologies:
+        - Go
+        - Kotlin
+        - Python
+        - Javascript/Typescript + React
+        - Protocol Buffers + gRPC
+        - GraphQL
       timeSpan:
         startDate: Dec 2018
         endDate: Jan 2020
@@ -30,6 +37,13 @@ experience:
         text: Led 1-on-1 and team mentorship sessions with junior developers focusing on overall code best practices, code organization, and Go specific idioms,syntax, and patterns
     - order: 2
       title: Devops/SRE
+      technologies:
+      - Kubernetes
+      - ArgoCD
+      - Python
+      - Bash
+      - Docker
+      - GCS/AWS
       timeSpan:
         startDate: Sept 2016
         endDate: Jan 2020
@@ -70,6 +84,10 @@ experience:
     roles:
     - order: 1
       title: Student (data science)
+      technologies:
+      - Python
+      - ScikitLearn
+      - Docker
       timeSpan:
         startDate: May 2016
         endDate: Aug 2016
@@ -87,6 +105,10 @@ experience:
     roles:
     - order: 2
       title: Operations Analyst
+      technologies:
+      - Microsoft Dynamics (X++)
+      - PowerBI
+      - Python
       timeSpan:
         startDate: Jul 2015
         endDate: May 2016

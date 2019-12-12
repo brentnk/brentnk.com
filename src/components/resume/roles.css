@@ -1,0 +1,14 @@
+.role-tech {
+    font-weight: normal;
+    font-size: smaller;
+}
+
+.role-title {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline;
+}
+
+.work-dates {
+    margin-bottom: .5em;
+}
