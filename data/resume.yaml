@@ -30,11 +30,13 @@ experience:
         endDate: Jan 2020
       points:
       - order: 1
-        text: Implemented multiple proof of concept systems utilizing multiple different technologies and coding styles (functional, OO, procedural)
+        text: Implemented 3 proof of concept platform replacements utilizing different technologies and coding styles (functional, OO, procedural) to use as references during planning.
       - order: 2
-        text: Presented business case to executive leadership for platform rewrite focusing on value to company and optimal use of current and future use of developer resources
+        text: Presented business case to executive leadership for platform rewrite focusing on value to company, optimal use of current and future use of developer resources, and hireability.
       - order: 3
-        text: Led 1-on-1 and team mentorship sessions with junior developers focusing on overall code best practices, code organization, and Go specific idioms,syntax, and patterns
+        text: Led 1-on-1 and team mentorship sessions with junior developers focusing on overall code best practices, code organization, and Go specific idioms,syntax, and patterns.
+      - order: 4
+        text: Contributed core platform code focusing on providing a consistent API surface for all layers of the application, maintaining consistent code semantics, and planning for future extensibility. 
     - order: 2
       title: Devops/SRE
       technologies:
@@ -49,15 +51,15 @@ experience:
         endDate: Jan 2020
       points:
       - order: 1
-        text: Designed and implemented gitops based CICD workflow with a focus on current and past system state introspection and "correctness"
+        text: Designed and implemented gitops based CICD workflow with a focus on current and past system state, introspection, and "correctness" allowing developers to release code with a single git commit.
       - order: 2
-        text: Migrated legacy PHP/Vagrant application developer environment to containerized(Docker) setup greatly reducing environment drift and developer onboarding time.
+        text: Migrated legacy PHP/Vagrant application developer environment to containerized setup reducing developer onboarding time from +1 weeks to 2-3 hours while reducing environment drift.
       - order: 3
         text: Designed and implemented automated build and testing pipeline using Jenkins and Docker building off of newly containerized legacy application.
       - order: 4
-        text: Planned and executed migration from single host bare-metal production setup to a cloud environment (K8s on AWS) with a focus on reducing the technical knowledge needed for developer to release code and manual effort required. This enabled code to be shipped much more often and reliably.
+        text: Planned and executed migration from single host bare-metal production setup to a cloud environment (K8s on AWS) with a focus on reducing the technical knowledge needed for developer to release code and manual effort required. This enabled code to be shipped weekly over monthly.
       - order: 5
-        text: Identified key application bottlenecks and single points of failure during major outage. Worked with senior developers, product, and platform support to setup appropriate alerting and contingency plans.
+        text: Identified key application bottlenecks and single points of failure during major outage. Worked with senior developers, product, and platform support to setup appropriate alerting and contingency plans.  Implemented changes brought the platform uptime from 75% to 99%.
     - order: 3
       title: Solutions Architect
       timeSpan:
