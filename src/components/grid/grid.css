@@ -1,0 +1,19 @@
+.cell {
+  /* animation: color_change 3s infinite alternate; */
+  height: 100%;
+  display: flex;
+}
+
+.cell span {
+    margin: auto;
+    text-align: center;
+}
+
+@keyframes color_change {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: red;
+  }
+}
